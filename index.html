@@ -1057,6 +1057,8 @@
     .nav-links a.is-active { color: var(--gold-light); }
     .button-primary, .product-order, .header-cta { position: relative; overflow: hidden; }
     /* Selo "M": centraliza no círculo (compensa a métrica da Playfair, que assenta a letra ~0.06em abaixo do centro) */
+    /* "M" da caixa "Encomendas com 50%": a regra genérica ".hero-note span" (margem 3px, fonte .65rem) estava afetando o selo e o deslocando */
+    .hero-note .hero-note-mark { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; box-sizing: border-box; margin: 0; padding: 0 0 .12em; font-size: 1rem; line-height: 1; color: var(--gold-light); }
     .brand-seal { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; box-sizing: border-box; padding: 0 0 .12em; line-height: 1; text-align: center; }
     .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,.4); transform: scale(0); animation: ripple .7s ease-out forwards; pointer-events: none; }
     @keyframes ripple { to { transform: scale(1); opacity: 0; } }
